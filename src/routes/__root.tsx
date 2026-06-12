@@ -81,19 +81,52 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "GrowthSpark Digital Agency — Modern Web & Digital Solutions" },
+      {
+        name: "description",
+        content:
+          "GrowthSpark Digital Agency helps businesses grow online with web development, SEO, social media marketing, and branding services.",
+      },
+      { name: "author", content: "GrowthSpark Digital Agency" },
+      { property: "og:title", content: "GrowthSpark Digital Agency" },
+      {
+        property: "og:description",
+        content:
+          "Grow your business with modern digital solutions — web development, SEO, marketing & branding.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "GrowthSpark Digital Agency",
+          description:
+            "Web development, SEO, social media marketing and branding agency.",
+          email: "hello@growthsparkagency.com",
+          telephone: "+91 98765 43210",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Chennai",
+            addressRegion: "Tamil Nadu",
+            addressCountry: "IN",
+          },
+        }),
       },
     ],
   }),
