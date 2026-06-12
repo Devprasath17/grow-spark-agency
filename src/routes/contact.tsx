@@ -198,7 +198,7 @@ function Contact() {
                   <Input type="email" placeholder="you@example.com" {...register("email")} />
                 </Field>
                 <Field label="Phone Number" error={errors.phone?.message}>
-                  <Input type="tel" placeholder="+91 98765 43210" {...register("phone")} />
+                  <Input type="tel" placeholder="+91 84388 49180" {...register("phone")} />
                 </Field>
                 <Field label="Service Required" error={errors.service?.message}>
                   <Select

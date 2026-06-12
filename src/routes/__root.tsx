@@ -104,6 +104,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/93b11fc8-9a9d-446a-9ec5-9503d516fcd9/id-preview-e04e4fe7--8d43da95-79db-41ee-9e7d-9d91d435424d.lovable.app-1781254680338.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/93b11fc8-9a9d-446a-9ec5-9503d516fcd9/id-preview-e04e4fe7--8d43da95-79db-41ee-9e7d-9d91d435424d.lovable.app-1781254680338.png" },
     ],
+    telephone: "+91 84388 49180",
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
@@ -126,7 +127,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           description:
             "Web development, SEO, social media marketing and branding agency.",
           email: "hello@growthsparkagency.com",
-          telephone: "+91 98765 43210",
+          telephone: "+91 84388 49180",
           address: {
             "@type": "PostalAddress",
             addressLocality: "Chennai",

@@ -13,8 +13,8 @@ import {
 export const SITE = {
   name: "GrowthSpark Digital Agency",
   shortName: "GrowthSpark",
-  phone: "+91 98765 43210",
-  phoneRaw: "919876543210",
+  phone: "+91 84388 49180",
+  phoneRaw: "918438849180",
   email: "hello@growthsparkagency.com",
   address: "Chennai, Tamil Nadu, India",
   whatsappMessage:
