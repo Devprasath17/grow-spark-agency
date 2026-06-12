@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "functions": {
+    "dist/server/server.js": {
+      "runtime": "nodejs20.x",
+      "maxDuration": 10
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/dist/server/server.js" }
+  ]
+}
