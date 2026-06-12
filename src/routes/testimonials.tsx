@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 import { Counter } from "@/components/Counter";
 import { CTASection } from "@/components/CTASection";
+import { AnimatedTestimonialsSlider } from "@/components/animations/AnimatedTestimonialsSlider";
 import {
   Carousel,
   CarouselContent,

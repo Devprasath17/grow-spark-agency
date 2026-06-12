@@ -8,6 +8,8 @@ import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 import { Counter } from "@/components/Counter";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CTASection } from "@/components/CTASection";
+import { ClientLogosSection } from "@/components/sections/ClientLogosSection";
+import { AnimatedStatsGrid } from "@/components/sections/AnimatedStatsGrid";
 import {
   STATS,
   WHY_CHOOSE,
@@ -42,6 +44,7 @@ function Home() {
     <>
       <Hero />
       <Stats />
+      <ClientLogosSection />
       <WhyChoose />
       <ServicesPreview />
       <Testimonials />
@@ -139,20 +142,16 @@ function Hero() {
 }
 
 function Stats() {
+  const statsWithIcons = [
+    { value: 100, suffix: "+", label: "Projects Completed", icon: "🚀" },
+    { value: 50, suffix: "+", label: "Happy Clients", icon: "😊" },
+    { value: 5, suffix: "+", label: "Years Experience", icon: "⭐" },
+    { value: 24, suffix: "/7", label: "Support", icon: "🎧" },
+  ];
+
   return (
     <section className="px-4 py-16 sm:px-6 lg:px-8">
-      <Stagger className="mx-auto grid max-w-6xl grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
-        {STATS.map((stat) => (
-          <StaggerItem key={stat.label}>
-            <div className="card-hover rounded-2xl glass p-6 text-center">
-              <p className="text-3xl font-bold text-primary sm:text-4xl">
-                <Counter value={stat.value} suffix={stat.suffix} />
-              </p>
-              <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
-            </div>
-          </StaggerItem>
-        ))}
-      </Stagger>
+      <AnimatedStatsGrid stats={statsWithIcons} />
     </section>
   );
 }
