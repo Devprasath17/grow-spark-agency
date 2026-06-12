@@ -164,6 +164,7 @@ function RootComponent() {
         <Footer />
         <WhatsAppButton />
       </div>
+      <Toaster position="top-center" richColors />
     </QueryClientProvider>
   );
 }
