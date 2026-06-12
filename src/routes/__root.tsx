@@ -89,7 +89,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "GrowthSpark Digital Agency helps businesses grow online with web development, SEO, social media marketing, and branding services.",
       },
       { name: "author", content: "GrowthSpark Digital Agency" },
-      { property: "og:title", content: "GrowthSpark Digital Agency" },
+      { property: "og:title", content: "GrowthSpark Digital Agency — Modern Web & Digital Solutions" },
       {
         property: "og:description",
         content:
@@ -97,6 +97,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "GrowthSpark Digital Agency — Modern Web & Digital Solutions" },
+      { name: "description", content: "A modern, responsive business website for a digital agency, showcasing services and client success." },
+      { property: "og:description", content: "A modern, responsive business website for a digital agency, showcasing services and client success." },
+      { name: "twitter:description", content: "A modern, responsive business website for a digital agency, showcasing services and client success." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/93b11fc8-9a9d-446a-9ec5-9503d516fcd9/id-preview-e04e4fe7--8d43da95-79db-41ee-9e7d-9d91d435424d.lovable.app-1781254680338.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/93b11fc8-9a9d-446a-9ec5-9503d516fcd9/id-preview-e04e4fe7--8d43da95-79db-41ee-9e7d-9d91d435424d.lovable.app-1781254680338.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
